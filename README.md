@@ -3,26 +3,24 @@ Codebase for the voice service of the [WorkingAge](https://www.workingage.eu) to
 
 ## Speech emotion recognition
 
-Emotion recognition module that is integrated in the polimi server
-The `sample_api.py` demonstrates how to use the api.
-Either you get a probabilities and classes in a json format:
+This is the code of the module for speech emotion recognition integrated in the PoliMI edge server.
+The module communicates through the ZeroMQ platform.
+The generated JSON payload with the recognized emotion has the following format:
 
 ```json
 {
-    'angry': 0.5550436,
-    'sad': 0.07934057,
-    'happy': 0.30479267,
-    'neutral': 0.060823184
+  "probability": 0.79340570,
+  "timeStamp": "20211231235959",
+  "sensorType": "Microphone",
+  "values": 
+  {
+    "sensor": "EmoState",
+    "value": "Positive"
+  }
 }
 ```
 
-or if no-speech is detected, you get
-
-```json
-{
-    'no_speech': prob-of-no-speech
-}
-```
+The payload is sent through the ZeroMQ publisher using the `user pseudo ID` as topic, e.g. `U550e8400-e29b-41d4-a716-446655440000`.
 
 ## Installation
 
@@ -34,7 +32,7 @@ To install the required packages use the `requirements.txt` file.
 pip3 install -r requirements.txt
 ```
 
-If you're not using a virtual environment, it is suggested to install with 
+If you're not using a virtual environment, it is suggested to install with the user-only option
 ```bash
 pip3 install --user -r requirements.txt
 ```

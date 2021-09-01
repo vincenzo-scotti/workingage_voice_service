@@ -4,11 +4,12 @@ Release of the code for the PATHOSnet multimodal neural network for emotion reco
 Developed by [ARCSlab](https://arcslab.dei.polimi.it) at [PoliMI](https://www.polimi.it).
 
 The implemented network is described in the paper "[Combining Deep and Unsupervised Features for Multilingual Speech Emotion Recognition](https://link.springer.com/chapter/10.1007%2F978-3-030-68790-8_10)"
-Please, read the paper for the description of the work and all the reference and credits.
+Please, read the paper for the description of the work and all the references and credits.
 
 ## Requirements
 
-Package requirements can be found in the `requirements.txt` file inside this folder.
+It is suggested to install the environment in using Python 3.7.
+Package requirements can be found in the `requirements.txt` file inside this directory.
 For sake of completeness are reported also here:
 ```
 numba==0.48
@@ -119,6 +120,7 @@ Look at the `pathonset_test.py` for an example of how to use the code.
 
 ## Cite the work
 
+IF you are willing to use our code, please cite our work through the following BibTeX entry:
 ```latex
 @inproceedings{scotti2020combining,
   author    = {Vincenzo Scotti and
