@@ -127,3 +127,14 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Audeering library
+src/aud/
+
+# Polimi NN checkpoints
+src/polimi/checkpoints/*
+!src/polimi/checkpoints/README.md
+src/polimi/ghostvlad/pretrained_models/*
+!src/polimi/ghostvlad/pretrained_models/README.md
+src/polimi/MUSE/data/*
+!src/polimi/MUSE/data/README.md
