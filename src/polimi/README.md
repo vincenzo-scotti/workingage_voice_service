@@ -118,9 +118,9 @@ sorted(binary_prediction, key=lambda k: -binary_prediction[k])[0]
 
 Look at the `pathonset_test.py` for an example of how to use the code.
 
-## Cite the work
+## Cite work
 
-IF you are willing to use our code, please cite our work through the following BibTeX entry:
+If you are willing to use our code, please cite our work through the following BibTeX entry:
 ```latex
 @inproceedings{scotti2020combining,
   author    = {Vincenzo Scotti and
