@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 # Resouces directory
-resources
+resources/user_data/
 
 # Audeering library
 src/aud/
