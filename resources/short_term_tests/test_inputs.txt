@@ -1,0 +1,93 @@
+# SPANISH
+
+## PATHOSnet
+
+python3 ensemble_test.py
+--csv_file "/securestorage/short_term_tests_data/metadata.csv"
+--data_path "/securestorage/short_term_tests_data/"
+--model_weights_path "/home/workingage/WACode/polimi/checkpoints/pathosnet_esp_multimodal.h5"
+--vggish_weights_path "/home/workingage/WACode/polimi/checkpoints/weights_vggish.h5"
+--ghostvlad_weights_path "/home/workingage/WACode/polimi/ghostvlad/pretrained_models/ghostvlad_weights.h5"
+--word_embeddings_path "/home/workingage/WACode/polimi/MUSE/data/wiki.es.vec"
+--modality multimodal
+--polimi_model_weight 1.0
+--audeering_model_weight 0.0
+--output_id pathosnet_esp_short_term_test
+--verbose True
+
+# Audeering
+
+python3 ensemble_test.py
+--csv_file "/securestorage/short_term_tests_data/metadata.csv"
+--data_path "/securestorage/short_term_tests_data/"
+--model_weights_path "/home/workingage/WACode/polimi/checkpoints/pathosnet_esp_multimodal.h5"
+--vggish_weights_path "/home/workingage/WACode/polimi/checkpoints/weights_vggish.h5"
+--ghostvlad_weights_path "/home/workingage/WACode/polimi/ghostvlad/pretrained_models/ghostvlad_weights.h5"
+--word_embeddings_path "/home/workingage/WACode/polimi/MUSE/data/wiki.es.vec"
+--modality multimodal
+--polimi_model_weight 0.0
+--audeering_model_weight 1.0
+--output_id audeering_esp_short_term_test
+--verbose True
+
+# Ensemble
+
+python3 ensemble_test.py
+--csv_file "/securestorage/short_term_tests_data/metadata.csv"
+--data_path "/securestorage/short_term_tests_data/"
+--model_weights_path "/home/workingage/WACode/polimi/checkpoints/pathosnet_esp_multimodal.h5"
+--vggish_weights_path "/home/workingage/WACode/polimi/checkpoints/weights_vggish.h5"
+--ghostvlad_weights_path "/home/workingage/WACode/polimi/ghostvlad/pretrained_models/ghostvlad_weights.h5"
+--word_embeddings_path "/home/workingage/WACode/polimi/MUSE/data/wiki.es.vec"
+--modality multimodal
+--polimi_model_weight 0.466
+--audeering_model_weight 0.534
+--output_id ensemble_esp_short_term_test
+--verbose True
+
+# GREEK
+
+## PATHOSnet
+
+python3 ensemble_test.py
+--csv_file "/securestorage/short_term_tests_data/metadata.csv"
+--data_path "/securestorage/short_term_tests_data/"
+--model_weights_path "/home/workingage/WACode/polimi/checkpoints/pathosnet_el_audio.h5"
+--vggish_weights_path "/home/workingage/WACode/polimi/checkpoints/weights_vggish.h5"
+--ghostvlad_weights_path "/home/workingage/WACode/polimi/ghostvlad/pretrained_models/ghostvlad_weights.h5"
+--word_embeddings_path "/home/workingage/WACode/polimi/MUSE/data/wiki.es.vec"
+--modality voice
+--polimi_model_weight 1.0
+--audeering_model_weight 0.0
+--output_id pathosnet_el_short_term_test
+--verbose True
+
+# Audeering
+
+python3 ensemble_test.py
+--csv_file "/securestorage/short_term_tests_data/metadata.csv"
+--data_path "/securestorage/short_term_tests_data/"
+--model_weights_path "/home/workingage/WACode/polimi/checkpoints/pathosnet_el_audio.h5"
+--vggish_weights_path "/home/workingage/WACode/polimi/checkpoints/weights_vggish.h5"
+--ghostvlad_weights_path "/home/workingage/WACode/polimi/ghostvlad/pretrained_models/ghostvlad_weights.h5"
+--word_embeddings_path "/home/workingage/WACode/polimi/MUSE/data/wiki.es.vec"
+--modality voice
+--polimi_model_weight 0.0
+--audeering_model_weight 1.0
+--output_id audeering_el_short_term_test
+--verbose True
+
+# Ensemble
+
+python3 ensemble_test.py
+--csv_file "/securestorage/short_term_tests_data/metadata.csv"
+--data_path "/securestorage/short_term_tests_data/"
+--model_weights_path "/home/workingage/WACode/polimi/checkpoints/pathosnet_el_audio.h5"
+--vggish_weights_path "/home/workingage/WACode/polimi/checkpoints/weights_vggish.h5"
+--ghostvlad_weights_path "/home/workingage/WACode/polimi/ghostvlad/pretrained_models/ghostvlad_weights.h5"
+--word_embeddings_path "/home/workingage/WACode/polimi/MUSE/data/wiki.es.vec"
+--modality voice
+--polimi_model_weight 0.469
+--audeering_model_weight 0.531
+--output_id ensemble_el_short_term_test
+--verbose True
