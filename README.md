@@ -55,7 +55,8 @@ To run as a SystemD service (preferred)
 sudo systemctl enable workingage.service
 sudo systemctl start workingage.service
 ```
-Service configuration file should be `/lib/systemd/system/workingage.service` 
+Service configuration file should be `/lib/systemd/system/workingage.service` for Debian/Ubuntu-based systems 
+and in `/usr/lib/systemd/system/workingage.service` for CentOS/Fedora/RHEL-based systems.
 
 Additional commands to interact with the SystemD service
 
@@ -66,6 +67,7 @@ sudo systemctl enable workingage.service
 sudo systemctl disable workingage.service
 sudo systemctl start workingage.service
 sudo systemctl stop workingage.service
+sudo systemctl restart workingage.service
 sudo systemctl status workingage.service
 ```
 
