@@ -8,11 +8,10 @@ Type=simple
 User=workingage
 Group=workingage
 WorkingDirectory=/home/workingage/WACode
-ExecStart=/usr/bin/python3 /home/workingage/WACode/workingAgeVoiceService.py
-StandardError=journal
-StandardOutput=journal
+ExecStart=/usr/bin/python3 -u /home/workingage/WACode/workingAgeVoiceService.py
+StandardError=journal+console
+StandardOutput=journal+console
 StandardInput=tty-force
 
 [Install]
 WantedBy=multi-user.target
-
